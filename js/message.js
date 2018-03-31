@@ -53,7 +53,7 @@
       )
     },
     bindEvents: function(){
-  	let that = this
+    	let that = this
       this.form.addEventListener('submit', function(e){
         e.preventDefault()
         that.saveMessage()
