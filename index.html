@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>熊文轩的个人简历</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/indexStep3.css" />
+	<script src="//at.alicdn.com/t/font_451045_32zbfqegtq3t0529.js"></script>
+	<style type="text/css">
+		.icon {
+			width: 1em;
+			height: 1em;
+			vertical-align: -0.15em;
+			fill: currentColor;
+			overflow: hidden;
+		}
+
+		.site-welcome {
+			display: none;
+			position: fixed;
+			left: 0;
+			top: 0;
+			background: #888;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.site-welcome.active {
+			display: flex;
+		}
+
+		.loading {
+			width: 200px;
+			height: 200px;
+			position: relative;
+		}
+
+		.loading::before,
+		.loading::after {
+			content: '';
+			position: absolute;
+			width: 0px;
+			height: 0px;
+			background: black;
+			border-radius: 50%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			margin: auto;
+			animation: s 1.5s linear infinite;
+		}
+
+		.loading::after {
+			animation-delay: 0.75s;
+		}
+
+		@keyframes s {
+			0% {
+				width: 0px;
+				height: 0px;
+				opacity: 1;
+			}
+			100% {
+				width: 100px;
+				height: 100px;
+				opacity: 0;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="siteWelcome" class="site-welcome active">
+		<div class="loading"></div>
+	</div>
+	<div id="topNavBar" class="topNavBar">
+		<div class="topNavBar-inner clearfix">
+			<a class="logo" href="#" alt="logo" style="float: left;">
+				<span class="rs">RS</span>
+				<span class="card">card</span>
+			</a>
+			<nav class="menu" style="float: right;">
+				<ul class="clearfix">
+					<li>
+						<a href="#setAbout">关于</a>
+					</li>
+					<li>
+						<a href="#siteSkills">技能</a>
+					</li>
+					<li>
+						<a href="#siteWorks">作品</a>
+						<ul class="submenu">
+							<li>作品1</li>
+							<li>作品2</li>
+							<li>作品3</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">博客</a>
+						<ul class="submenu">
+							<li>作品1</li>
+							<li>作品2</li>
+							<li>作品3</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">日历</a>
+					</li>
+					<li>
+						<a href="#">联系方式</a>
+					</li>
+					<li>
+						<a href="#">其他</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="banner">
+		<div class="mask"></div>
+	</div>
+	<main style="">
+		<div data-x id="setAbout" class="userCard">
+			<div class="pictureAndText clearfix">
+				<div class="picture">
+					<img src="./img/avatar.jpg" width=299 height=347 alt="头像">
+				</div>
+				<div class="text">
+					<span class="welcome">Hello
+						<span class="triangle"></span>
+					</span>
+					<h1>熊文轩</h1>
+					<p>前端开发工程师</p>
+					<hr>
+					<dl>
+						<dt>年龄</dt>
+						<dd>23</dd>
+						<dt>所在城市</dt>
+						<dd>武汉</dd>
+						<dt>邮箱</dt>
+						<dd>291857648@qq.com</dd>
+						<dt>手机</dt>
+						<dd>13163392598</dd>
+					</dl>
+				</div>
+			</div>
+			<footer class="media">
+				<a href="#">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-github"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-Ankerwebicon-"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="icon" aria-hidden="true">
+						<use xlink:href="#icon-weibo"></use>
+					</svg>
+				</a>
+			</footer>
+		</div>
+
+		<p class="downloadResume-wrapper">
+			<a class="downloadResume" href="./resume.pdf" target="_blank" download>下载 PDF 简历</a>
+		</p>
+
+		<p class="selfIntroduction">
+			熊文轩， 资深前端工程师，资深前端讲师，现在在 饥人谷 教前端课程。
+			<br> 技能：前端开发，Rails 开发，Node.js 开发
+		</p>
+
+	</main>
+	<section data-x id="siteSkills" class="skills">
+		<h2>技能</h2>
+		<ol class="clearfix">
+			<li>
+				<h3>
+					HTML 5 &amp; CSS 3
+				</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 10%;"></div>
+				</div>
+			</li>
+			<li>
+				<h3>
+					JavaScript
+				</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 20%"></div>
+				</div>
+			</li>
+			<li>
+				<h3>
+					jQuery
+				</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 30%"></div>
+				</div>
+			</li>
+			<li>
+				<h3>
+					Vue.js
+				</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 40%"></div>
+				</div>
+			</li>
+			<li>
+				<h3>
+					React.js
+				</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 50%"></div>
+				</div>
+			</li>
+			<li>
+				<h3>
+					Node.js
+				</h3>
+				<div class="progressBar">
+					<div class="progress" style="width: 60%"></div>
+				</div>
+			</li>
+		</ol>
+	</section>
+	<section data-x id="siteWorks" class="portfolio">
+		<h2>作品集</h2>
+		<div id="mySlides">
+	      <div class="swiper-container">
+	        <!-- Additional required wrapper -->
+	        <div class="swiper-wrapper">
+	          <!-- Slides -->
+	          <img src="./img/work/nav-page.jpg" class="swiper-slide">
+	          <img src="img/work/canvas.jpg" class="swiper-slide">
+	          <img src="img/work/apple-style-slides.jpg" class="swiper-slide">
+	        </div>
+	        <!-- If we need pagination -->
+	        <div class="swiper-pagination"></div>
+	
+	        <!-- If we need navigation buttons -->
+	      </div>
+	      <div class="swiper-button-prev"></div>
+	      <div class="swiper-button-next"></div>
+	    </div>
+	</section>
+	<section class="message">
+	    <h2>留言</h2>
+	    <ol id="messageList">
+	    </ol>
+	    <form id="postMessageForm" style="width: 700px; margin: 50px auto;">
+	      <label for="">姓名</label>
+	      <input type="text" name="name">
+	      <label for="">内容</label>
+	      <input type="text" name="content">
+	      <input type="submit" value="提交">
+	    </form>
+    </section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+	<script src="//cdn1.lncld.net/static/js/3.6.1/av-min.js"></script>
+	<script src="js/init-swiper.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/auto-slide-up.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/sticky-topbar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/smoothly-navigation.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/loading.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/message.js" type="text/javascript" charset="utf-8"></script>
+	
+</body>
+
+</html>
