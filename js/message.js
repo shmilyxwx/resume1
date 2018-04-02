@@ -63,7 +63,8 @@
       let myForm = this.form
       let content = myForm.querySelector('input[name=content]').value
       let name = myForm.querySelector('input[name=name]').value
-      this.model.save(name, content).then(function(object) {
+      if(name.length !=0 && content.length !=0){
+      	this.model.save(name, content).then(function(object) {
         let li = document.createElement('li')
         li.innerText = `${object.attributes.name}: ${object.attributes.content}`
         let messageList = document.querySelector('#messageList')
@@ -71,6 +72,7 @@
         myForm.querySelector('input[name=content]').value = ''
         console.log(object)
       })
+      }
     }
 
   }
